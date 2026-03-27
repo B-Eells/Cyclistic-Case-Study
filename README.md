@@ -55,7 +55,7 @@ I performed data exploration and analysis using Google BigQuery, where I created
 
 The table **2024_divvy_tripdata_comb.2024_divvy_tipdata** contains combined data from all 12 months of 2024, and has the below schema. Note that each variable exists as the appropriate data type. Short descriptions of each field also appear below. This combined dataset has **5,860,568** rows.
 
-| Field name | Type | Mode | Description
+| Field Name | Type | Mode | Description
 | --- | --- | --- | ---
 | ride_id | String | Nullable | The unique identifier for the ride.
 | rideable_type | String | Nullable | The equipment type used for the ride.
@@ -87,7 +87,6 @@ I do not believe this data to have issues with bias or credibility, as it passes
 By running the following [Data Integrity SQL Queries], I idenfified the following issues:
 
 | Field(s) | Issues
-
 | --- | ---
 | `ride_id` | 211 duplicates
 | `rideable_type` | No issues
@@ -108,8 +107,11 @@ By running the following [Data Cleaning SQL Queries], I made changes to the data
 
 By running the following [Data Manipulation SQL Queries], I processed the data for the Analysis step as listed below. (manipulations also listed in the changelog above)
 * I broke out the `started_at` timestamp into month, day of week, and hour of day. I also created fields for the name of each dimension for easier display in Tableau.
-* I calculated duration not only in hh:mm:ss, but in seconds as well for easier duration calculation.
-* I also decided to analyze location data not by station, but by geographic location. As such, I created "virtual start station id's" and "virtual end station id's". As such, I did not delete records that had missing station data.
+* I calculated duration not only in mm:ss format, but also in seconds (INT64 format) for easier calculation.
+* Because the majority of rides were on `rideable_types` that were electric and therefore not necessarily tethered to stations, I decided to analyze data not by station, but by geographic location. As such, I created "virtual start station id's" and "virtual end station id's" to help with Grouping for distance and route calculations.
+* To retain a larger data set, I also chose not to delete records that had missing station data. (I did not end up using the station data)
+* I calculated the distance in meters for each ride so I could compare the member types in terms of average distance ridden.
+* I calculated the routes so I could rank their popularity.
 
 My resultant schema going into the Analysis step looked like this:
 | Field name | Data Type | Source
@@ -127,6 +129,7 @@ My resultant schema going into the Analysis step looked like this:
 | ended_at | timestamp | calculated
 | duration_hms | string | calculated
 | duration_secs | integer | calculated
+| distance_in_meters | integer | calculated
 | start_station_id | string | provided
 | start_station_name | string | provided
 | end_station_id | string | provided
@@ -138,7 +141,7 @@ My resultant schema going into the Analysis step looked like this:
 | end_lng | string | provided
 | v_end_station_id | string | calculated
 | geo_route | string | calculated
-| distance_in_meters | integer | calculated
+
 
 
 
