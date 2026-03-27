@@ -1,4 +1,7 @@
-# Google Data Analytics Professional Certificate: Cyclistic Bike Share Case Study
+
+<img width="500" height="200" alt="Screenshot 2026-02-27 at 12 26 12 PM" src="https://github.com/user-attachments/assets/21685ed4-b0f5-49a9-9544-e8d9e00ff9c6" />
+
+# Google Data Analytics Case Study: Cyclistic Bike Share
 
 ## Introduction
 
@@ -41,9 +44,11 @@ https://divvy-tripdata.s3.amazonaws.com/index.html). From this page I downloaded
 Regarding licensing, the case study cited that the data was made available by Motivate International, Inc. under this [license](https://www.divvybikes.com/data-license-agreement).
 
 #### Google Cloud
+
 In my **Google Cloud** account, I created a bucket called **2024_divvy-tripdata-bucket** and uploaded the source files to it. I chose this location due to its capacity and ease of access using Big Query. For backup, I uploaded the 12 zip files to my personal Google Drive account. 
 
 #### Google BigQuery
+
 I performed data exploration and analysis using Google BigQuery, where I created a dataset called **2024_divvy_tripdata_comb**. Within that dataset I created a table called **2024_divvy_tipdata** where I combined all of the monthly data from my Google Cloud bucket. Within the same directory I  also saved cleaning and analysis tables.
 
 ### Data Organization
@@ -74,4 +79,69 @@ I do not believe this data to have issues with bias or credibility, as it passes
 * **Comprehensive**: The case study states, "For the purposes of this case study, the datasets are appropriate and will enable you to answer the business questions."
 * **Current**: The data is from 2024, which was the most current full year when I started this case study.
 * **Cited**: the case study cited that the data was made available by Motivate International, Inc. under this [license](https://www.divvybikes.com/data-license-agreement). The dataset appears to have been last refreshed in June of 2025, so it seems sufficiently current.
+
+## Step 3: Process
+
+### Data Integrity
+
+By running the following [Data Integrity SQL Queries], I idenfified the following issues:
+
+| Field(s) | Issues
+
+| --- | ---
+| `ride_id` | 211 duplicates
+| `rideable_type` | No issues
+| `started_at`, `ended_at` | 138,852 records have a duration that does not fall between 60 seconds and 24 hours.
+| `start_station_name` | 1,073,951 nulls and 3 invalid values found.
+| `start_station_id` | 1,073,951 nulls and 3 invalid values found.
+| `end_station_name` | 1,104,653 nulls and 95 rows where an `end_station_id` has more than one `end_station_name`.
+| `end_station_id` | 1,104,653 nulls and 2 invalid values found.
+| `start_lat`, `start_lng`, `end_lat`, `end_lng` | 7,232 nulls within `end_lat` and `end_lng`, plus 342 geographic outliers.
+
+### Data Cleaning and Manipulation
+
+#### Data Cleaning
+
+By running the following [Data Cleaning SQL Queries], I made changes to the data as recorded in this [Cyclistic Case Study Changelog.xlsx](https://github.com/user-attachments/files/26317199/Cyclistic.Case.Study.Changelog.xlsx). I have also validated these changes as a separate step.
+
+#### Data Manipulation
+
+By running the following [Data Manipulation SQL Queries], I processed the data for the Analysis step as listed below. (manipulations also listed in the changelog above)
+* I broke out the `started_at` timestamp into month, day of week, and hour of day. I also created fields for the name of each dimension for easier display in Tableau.
+* I calculated duration not only in hh:mm:ss, but in seconds as well for easier duration calculation.
+* I also decided to analyze location data not by station, but by geographic location. As such, I created "virtual start station id's" and "virtual end station id's". As such, I did not delete records that had missing station data.
+
+My resultant schema going into the Analysis step looked like this:
+| Field name | Data Type | Source
+| --- | --- | ---
+| ride_id | string | provided
+| member_type | string | provided
+| rideable_type | string | provided
+| started_at | timestamp | provided
+| start_mo | string | calculated
+| start_mo_name | string | calculated
+| start_day_of_wk | string | calculated
+| start_day_of_wk_name | string | calculated
+| start_hour_of_day | string | calculated
+| start_hour_of_day_name | string | calculated
+| ended_at | timestamp | calculated
+| duration_hms | string | calculated
+| duration_secs | integer | calculated
+| start_station_id | string | provided
+| start_station_name | string | provided
+| end_station_id | string | provided
+| end_station_name | string | provided
+| start_lat | string | provided
+| start_lng | string | provided
+| v_start_station_id | string | calculated
+| end_lat | string | provided
+| end_lng | string | provided
+| v_end_station_id | string | calculated
+| geo_route | string | calculated
+| distance_in_meters | integer | calculated
+
+
+
+
+
 
