@@ -45,11 +45,11 @@ Regarding licensing, the case study cited that the data was made available by Mo
 
 #### Google Cloud
 
-In my **Google Cloud** account, I created a bucket called **2024_divvy-tripdata-bucket** and uploaded the source files to it. I chose this location due to its capacity and ease of access using Big Query. For backup, I uploaded the 12 zip files to my personal Google Drive account. 
+In my **Google Cloud** account, a bucket was created called **2024_divvy-tripdata-bucket** and the source files were uploaded to it. This storage solution was chosen due to its capacity and ease of access using Big Query. For backup, the 12 .zip files were uploaded to my personal Google Drive account. 
 
 #### Google BigQuery
 
-I performed data exploration and analysis using Google BigQuery, where I created a dataset called **2024_divvy_tripdata_comb**. Within that dataset I created a table called **2024_divvy_tipdata** where I combined all of the monthly data from my Google Cloud bucket. Within the same directory I  also saved cleaning and analysis tables.
+Data exploration and analysis was carried out using Google BigQuery, where I created a dataset called **2024_divvy_tripdata_comb**. Within that dataset I created a table called **2024_divvy_tipdata** where I combined all of the monthly data from my Google Cloud bucket. Within the same directory I also saved tables used for cleaning and analysis.
 
 ### Data Organization
 
@@ -84,7 +84,7 @@ I do not believe this data to have issues with bias or credibility, as it passes
 
 ### Data Integrity
 
-By running the following [Data Integrity SQL Queries], I idenfified the following issues:
+By running the following [Data Integrity SQL Queries], the following issues were identified:
 
 | Field(s) | Issues
 | --- | ---
@@ -101,19 +101,19 @@ By running the following [Data Integrity SQL Queries], I idenfified the followin
 
 #### Data Cleaning
 
-By running the following [Data Cleaning SQL Queries], I made changes to the data as recorded in this [Cyclistic Case Study Changelog.xlsx](https://github.com/user-attachments/files/26317199/Cyclistic.Case.Study.Changelog.xlsx). I have also validated these changes as a separate step.
+By running the following [Data Cleaning SQL Queries], changes were made to the data and documented in the [Cyclistic Case Study Changelog.xlsx](https://github.com/user-attachments/files/26317199/Cyclistic.Case.Study.Changelog.xlsx). These changes have also been validated in a separate "technical validation" step, which is not detailed here.
 
 #### Data Manipulation
 
-By running the following [Data Manipulation SQL Queries], I processed the data for the Analysis step as listed below. (manipulations also listed in the changelog above)
-* I broke out the `started_at` timestamp into month, day of week, and hour of day. I also created fields for the name of each dimension for easier display in Tableau.
-* I calculated duration not only in mm:ss format, but also in seconds (INT64 format) for easier calculation.
-* Because the majority of rides were on `rideable_types` that were electric and therefore not necessarily tethered to stations, I decided to analyze data not by station, but by geographic location. As such, I created "virtual start station id's" and "virtual end station id's" to help with Grouping for distance and route calculations.
-* To retain a larger data set, I also chose not to delete records that had missing station data. (I did not end up using the station data)
-* I calculated the distance in meters for each ride so I could compare the member types in terms of average distance ridden.
-* I calculated the routes so I could rank their popularity.
+By running the following [Data Manipulation SQL Queries], the data was processed for the Analysis step as listed below. (manipulations also listed in the changelog above)
+* The `started_at` timestamp was broken out into month, day of week, and hour of day. Fields for the name of each dimension were also created for easier display in Tableau.
+* The duration was calculated not only in mm:ss format, but also in seconds (INT64 format) for easier calculation.
+* Because the majority of rides were on `rideable_types` that were electric and therefore not necessarily tethered to stations, analysis was not carried out by station, but rather by geographic location. As such, "virtual" start and end station id's were created to help with grouping for route calculations.
+* To retain a larger data set, records that had missing station data were not deleted.
+* The "distance in meters" was calcuated we we could analyze the average distance ridden.
+* The routes were established so their popularity could be ranked.
 
-My resultant schema going into the Analysis step looked like this:
+The resultant schema going into the Analysis step looked like this:
 | Field name | Data Type | Source
 | --- | --- | ---
 | ride_id | string | provided
@@ -142,9 +142,81 @@ My resultant schema going into the Analysis step looked like this:
 | v_end_station_id | string | calculated
 | geo_route | string | calculated
 
+## Step 4: Analysis
+
+By running the following [Data Analysi SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast the usage patterns. The first section discusses the differences in usage patterns.  However, I deemed it important to also share a second section that displays similarities, because even though the trends may not be different, they contain data, observations and insights that can be critical to the effective targeting of our marketing.
+
+### Usage Differences
+
+#### Total Ride Count
+
+Observations:
+Insights:
 
 
 
+#### Percent of Rides by Day of Week
 
+Observations:
+Insights:
+
+
+
+#### Average Ride Duration
+
+Observations:
+Insights:
+
+
+
+#### Top Start Locations
+
+Observations:
+Insights:
+
+
+
+#### Top End Locations
+
+Observations:
+Insights:
+
+
+
+#### Top Routes
+
+Observations:
+Insights:
+
+
+### Usage Similarities
+
+Again, similarities in usage patterns is not necessarily required, but some of the data may be critial for the effective targeting of our marketing campaigns.
+
+#### Total Rides Per Month
+
+Observations:
+Insights:
+
+
+
+#### Percent of Rides by Hour of Day.
+
+Observations:
+Insights:
+
+
+
+#### Average Ride Distance
+
+Observations:
+Insights:
+
+
+
+#### Percent of Rides by Rideable Type
+
+Observations:
+Insights:
 
 
