@@ -84,7 +84,7 @@ I do not believe this data to have issues with bias or credibility, as it passes
 
 ### Data Integrity
 
-By running the following [Data Integrity SQL Queries](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#:~:text=data_integrity_sql_queries), the following issues were identified:
+By running the following [Data Integrity SQL Queries](https://github.com/B-Eells/Cyclistic-Case-Study/blob/main/data_integrity_sql_queries.sql#:~:text=README.md-,data_integrity_sql_queries,-.sql), the following issues were identified:
 
 | Field(s) | Issues
 | --- | ---
