@@ -105,7 +105,7 @@ By running the following [Data Cleaning SQL Queries](https://github.com/B-Eells/
 
 #### Data Manipulation
 
-By running the following [Data Manipulation SQL Queries], the data was processed for the Analysis step as listed below. (manipulations also listed in the changelog above)
+By running the following [Data Manipulation SQL Queries](https://github.com/B-Eells/Cyclistic-Case-Study/blob/main/data_manipulation_sql_queries.sql), the data was processed for the Analysis step as listed below. (manipulations also listed in the changelog above)
 * The `started_at` timestamp was broken out into month, day of week, and hour of day. Fields for the name of each dimension were also created for easier display in Tableau.
 * The duration was calculated not only in mm:ss format, but also in seconds (INT64 format) for easier calculation.
 * Because the majority of rides were on `rideable_types` that were electric and therefore not necessarily tethered to stations, analysis was not carried out by station, but rather by geographic location. As such, "virtual" start and end station id's were created to help with grouping for route calculations.
