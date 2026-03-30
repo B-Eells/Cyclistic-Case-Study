@@ -5,7 +5,7 @@
 
 ## Introduction
 
-The purpose of this data analysis case study is for me to exhibit my command of the key steps of the data analysis process: Ask, Prepare, Process, Analyze, Share, Act. The case study is based on a fictitional bike-share company, but the source data is from a real-world operation.
+The purpose of this data analysis case study is for me to exhibit my command of the key steps of the data analysis process: [Ask](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-1-ask), [Prepare](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-2-prepare), [Process](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-3-process), [Analyze](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-4-analysis), Share, Act. The case study is based on a fictitional bike-share company, but the source data is from a real-world operation.
 
 References:
 * [Coursera: Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)
@@ -142,7 +142,7 @@ The resultant schema going into the Analysis step looked like this:
 | v_end_station_id | string | calculated
 | geo_route | string | calculated
 
-## Step 4: Analysis
+## Step 4: Analyze
 
 By running the following [Data Analysi SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast the usage patterns. The first section discusses the differences in usage patterns.  However, I deemed it important to also share a second section that displays similarities, because even though the trends may not be different, they contain data, observations and insights that can be critical to the effective targeting of our marketing.
 
