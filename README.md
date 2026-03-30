@@ -144,7 +144,7 @@ The resultant schema going into the Analysis step looked like this:
 
 ## Step 4: Analyze
 
-By running the following [Data Analysi SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast the usage patterns. The first section discusses the differences in usage patterns.  However, I deemed it important to also share a second section that displays similarities, because even though the trends may not be different, they contain data, observations and insights that can be critical to the effective targeting of our marketing.
+By running the following [Data Analysis SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast the usage patterns. The first section discusses the differences in usage patterns.  However, I deemed it important to also share a second section that displays similarities, because even though the trends may not be different, they contain data, observations and insights that can be critical to the effective targeting of our marketing.
 
 ### Usage Differences
 
