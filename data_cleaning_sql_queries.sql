@@ -1,4 +1,4 @@
--- 
+--  Data Cleaning
     -- Reorder and rename fields.
     -- Standardize text in string fields to UPPER
     -- Remove extra spaces from string fieStandardize inconsistent datalds using TRIM
