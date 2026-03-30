@@ -101,7 +101,7 @@ By running the following [Data Integrity SQL Queries](https://github.com/B-Eells
 
 #### Data Cleaning
 
-By running the following [Data Cleaning SQL Queries], changes were made to the data and documented in the [Cyclistic Case Study Changelog.xlsx](https://github.com/user-attachments/files/26317199/Cyclistic.Case.Study.Changelog.xlsx). These changes have also been validated in a separate "technical validation" step, which is not detailed here.
+By running the following [Data Cleaning SQL Queries](https://github.com/B-Eells/Cyclistic-Case-Study/blob/main/data_cleaning_sql_queries.sql), changes were made to the data and documented in the [Cyclistic Case Study Changelog.xlsx](https://github.com/user-attachments/files/26317199/Cyclistic.Case.Study.Changelog.xlsx). These changes have also been validated in a separate "technical validation" step, which is not detailed here.
 
 #### Data Manipulation
 
