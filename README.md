@@ -146,77 +146,62 @@ The resultant schema going into the Analysis step looked like this:
 
 By running the following [Data Analysis SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast the usage patterns. The first section discusses the differences in usage patterns.  However, I deemed it important to also share a second section that displays similarities, because even though the trends may not be different, they contain data, observations and insights that can be critical to the effective targeting of our marketing.
 
-### Usage Differences
+Summary statistics with identification of trends, relationships and surprises.
 
-#### Total Ride Count
+### Total Ride Volume
+* Total volume of rides: 5,720,900 (100%)
+* Total volume rides by annual members: 3,641,071 (63.6%)
+* Total volume of rides by casual riders: 2,079,829 (36.5%)
+* Insights: from a percent of total perspective, it appears to be a reasonable endeavor to convert casual riders to annual members.  If casual riders were a very slim minority (5% for example) or an overwheling majority (95% for example), conversions may not be where we want to focus our efforts.
 
-Observations:
-Insights:
+### Ride Volume by Month
+* The most popular months for both annual members and casual riders is May-Oct.
+* Trends: 
+* Trends/Relationships:
+  * Ridership for both groups climbs in the Spring, peaks during summer and declines in the fall, showing a very similar trend.
+  * A quick look at historical weather patterns for Chicago reveals this pattern corresponds to the historically warmer months.
+* Insights: although this does not represent a difference in usage trends, it is important information to be considered when targeting our marketing.
 
+<img width="393" height="293" alt="Screenshot 2026-03-30 at 3 34 51 PM" src="https://github.com/user-attachments/assets/6e76e319-932d-4646-83f0-505515cc072b" />
+  
+### Ride Volume by Day of Week
+* The most popular days of week for annual members:
+  * Wednesday (16%)
+  * Tuesday (15%)
+  * Thursday (15%)
+* Most popular days of week for casual riders:
+  * Saturday (21%)
+  * Sunday (17%)
+  * Friday (15%)
+* Trends:
+  * Annual members ride more often during weekdays and less often on weekends.
+  * Casual riders ride more often on weekends and less often on weekdays.
+* Trends/Relationships: the ride volume by day of week for annual members and casual riders is a largely inverse relationship.
+* Insights:
+  * For casual riders, although Saturday and Sunday boast the highest ridership from an "average daily" perspective, weekdays should not be discounted as having low ridership.  For casual riders, collectively weekdays comprise 63% of total rides.
+  * The weekday popularity for annual members suggest that many use the bikes to get to and from work. This supports the narrative that casual riders use the bikes more for pleasure.  
 
+### Ride Volume by Hour of Day.
+* The most popular time of day for both annual members and casual riders are the 3:00pm through 6:00pm hours, with the apex during the 5:00pm hour.
+* The least popular time of day for both rider types is in the middle of the night, between the 2:00am through 4:00am hours.
+* Trends/Relationships: the usage pattern between the two rider times is similar, except annual members also have a second, smaller spike in the hours leading up to work, 6:00am to 8:00am.
+* Insights: the peak times for casual riders is between 11:00am and 7:00pm, when over 60% of their rides occur. This supports the story that annual members use the bikes more for efficient transportation (going to and from work) than pleasure.
 
-#### Percent of Rides by Day of Week
+### Average Ride Duration & Distance
+* While the min and max ride durations for annual member and casual riders are simlar, annual members had an average ride duration of 12 minutes, 24 seconds, while casual riders had an average ride duration of 21 minutes, 23 seconds - almost double.
+* The average distance per ride for annual members and casual riders was 2,209 meters and 2,173 respectively -- so they are very close.
+* Insights: an average per ride, casual riders cover approximately half the ground that annual members do.  The story this tells is that annual members use the bikes more for transportation, efficiently travelling between point A and point B.  Casual riders on the other hand, appear to meander or stop more frequently, indicating they are more likely using the bikes for pleasure and sightseeing.
 
-Observations:
-Insights:
+### Start and End Locations, Routes
 
+Observations: for annual members, the top 10 start and end locations are not along the shore, they are in more urban areas including the train station, commercial areas and urban neighborhoods. The most popular location for annual members is Chicago Union Station. This supports the story that annual members use the bikes mostly for transporation. Meanwhile, for casual riders, the top locations are along the shore and adjacent to popular attractions. The most popular location for casual riders is Navy Pier. This supports the story that casual members use the bikes more for pleasure and sightseeing.
+Insight: this was perhaps the most surprising and telling information revealed in this study.  This really underscores the narrative that annual members use the bikes for transportation and casual riders use the bikes mostly for pleasure and sightseeing.
 
+### Percent of Rides by Rideable Type
 
-#### Average Ride Duration
+Annual members and Casual riders have a very similar breakdown of rideable_type usage. For both groups, 50% of their rides were on electric bikes, about 2-4% on electric scooters, and about 46-48% on classic bikes. 
 
-Observations:
-Insights:
+### Summary
+The story behind the data is that annual members use the bike share mostly for transportation in urban areas on weekdays, with Chicago Union Station being the most popular location.  Casual riders on the other hand primarily use the bikes for pleasure and sightseeing near along the shoreline and near coastal attractions. Casual members' favorite days to ride are Saturdays and Sundays, but weekdays should not be dismissed because they also have significant ridership.
 
-
-
-#### Top Start Locations
-
-Observations:
-Insights:
-
-
-
-#### Top End Locations
-
-Observations:
-Insights:
-
-
-
-#### Top Routes
-
-Observations:
-Insights:
-
-
-### Usage Similarities
-
-Again, similarities in usage patterns is not necessarily required, but some of the data may be critial for the effective targeting of our marketing campaigns.
-
-#### Total Rides Per Month
-
-Observations:
-Insights:
-
-
-
-#### Percent of Rides by Hour of Day.
-
-Observations:
-Insights:
-
-
-
-#### Average Ride Distance
-
-Observations:
-Insights:
-
-
-
-#### Percent of Rides by Rideable Type
-
-Observations:
-Insights:
-
-
+To target our marketing most effectively, I think it's important to understand certain casual rider preferences even though they are similar to annual members. Both annual members and casual riders are similar in that their usage is highest during the warmer months of May-October, and usage is highest in the late afternoon/early evenings. Also, both groups have almost an equal preference for electric bikes and classic bikes (at their respective price points), but ridership of electric scooters is very low at 2-4%.
