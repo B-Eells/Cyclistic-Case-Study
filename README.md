@@ -181,7 +181,7 @@ Summary statistics with identification of trends, relationships and surprises.
   * For casual riders, although Saturday and Sunday boast the highest ridership from an "average daily" perspective, weekdays should not be discounted as having low ridership.  For casual riders, collectively weekdays comprise 63% of total rides.
   * The weekday popularity for annual members suggest that many use the bikes to get to and from work. This supports the narrative that casual riders use the bikes more for pleasure.  
 
-### Ride Volume by Hour of Day.
+### Ride Volume by Hour of Day
 * The most popular time of day for both annual members and casual riders are the 3:00pm through 6:00pm hours, with the apex during the 5:00pm hour.
 * The least popular time of day for both rider types is in the middle of the night, between the 2:00am through 4:00am hours.
 * Trends/Relationships: the usage pattern between the two rider times is similar, except annual members also have a second, smaller spike in the hours leading up to work, 6:00am to 8:00am.
@@ -202,6 +202,6 @@ Insight: this was perhaps the most surprising and telling information revealed i
 Annual members and Casual riders have a very similar breakdown of rideable_type usage. For both groups, 50% of their rides were on electric bikes, about 2-4% on electric scooters, and about 46-48% on classic bikes. 
 
 ### Summary
-The story behind the data is that annual members use the bike share mostly for transportation in urban areas on weekdays, with Chicago Union Station being the most popular location.  Casual riders on the other hand primarily use the bikes for pleasure and sightseeing near along the shoreline and near coastal attractions. Casual members' favorite days to ride are Saturdays and Sundays, but weekdays should not be dismissed because they also have significant ridership.
+The story behind the data is that annual members use the bike share mostly for transportation in urban areas on weekdays, with Chicago Union Station being the most popular hub.  Casual riders on the other hand primarily use the bikes for pleasure and sightseeing near coastal attractions and along the shoreline. Casual members' favorite days to ride are Saturdays and Sundays, but weekdays should not be dismissed because they also have significant ridership.
 
 To target our marketing most effectively, I think it's important to understand certain casual rider preferences even though they are similar to annual members. Both annual members and casual riders are similar in that their usage is highest during the warmer months of May-October, and usage is highest in the late afternoon/early evenings. Also, both groups have almost an equal preference for electric bikes and classic bikes (at their respective price points), but ridership of electric scooters is very low at 2-4%.
