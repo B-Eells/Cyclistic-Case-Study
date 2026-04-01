@@ -179,23 +179,29 @@ Historic Temps:
 * Trends/Relationships: both rider types use the service most in the late afternoon, peaking during evening rush hour. However, the annual members differ from the casual riders in that they have two peaks in the day, which correspond to both a.m. and p.m. rush hours.
 * Insights: annual members have two peak usage times a day that correspond with traditional rush hours, indicating annual members mostly use the bikes for commuting. Casual riders do not appear to use the bikes as much for commuting to/from work, as evidenced by very low usage during the morning commute hours.
 
-<img width="75%" alt="Ride Distro by Hour of Day" src="https://github.com/user-attachments/assets/38e7d20c-e2c0-4ff3-936a-a33986b876a6" />
+<img width="90%" alt="Ride Distro by Hour of Day" src="https://github.com/user-attachments/assets/38e7d20c-e2c0-4ff3-936a-a33986b876a6" />
 
 ### Average Ride Duration & Distance
 * While the min and max ride durations for annual member and casual riders are simlar, annual members had an average ride duration of 12 minutes, 24 seconds, while casual riders had an average ride duration of 21 minutes, 23 seconds - almost double.
 * The average distance per ride for annual members and casual riders was 2,209 meters and 2,173 respectively -- so they are very close.
 * Insights: an average per ride, casual riders cover approximately half the ground that annual members do.  The story this tells is that annual members use the bikes more for transportation, efficiently travelling between point A and point B.  Casual riders on the other hand, appear to meander or stop more frequently, indicating they are more likely using the bikes for pleasure and sightseeing.
 
+<img width="999" height="799" alt="Duration   Distance" src="https://github.com/user-attachments/assets/bd566331-a561-4e6a-a64d-7aa2cab752f0" />
+
 ### Start and End Locations, Routes
 
 Observations: for annual members, the top 10 start and end locations are not along the shore, they are in more urban areas including the train station, commercial areas and urban neighborhoods. The most popular location for annual members is Chicago Union Station. This supports the story that annual members use the bikes mostly for transporation. Meanwhile, for casual riders, the top locations are along the shore and adjacent to popular attractions. The most popular location for casual riders is Navy Pier. This supports the story that casual members use the bikes more for pleasure and sightseeing.
 Insight: this was perhaps the most surprising and telling information revealed in this study.  This really underscores the narrative that annual members use the bikes for transportation and casual riders use the bikes mostly for pleasure and sightseeing.
 
+<img width="999" height="799" alt="Locations   Routes" src="https://github.com/user-attachments/assets/7d22e66c-a711-4aca-a5a5-77aea822a205" />
+
 ### Percent of Rides by Rideable Type
 
 Annual members and Casual riders have a very similar breakdown of rideable_type usage. For both groups, 50% of their rides were on electric bikes, about 2-4% on electric scooters, and about 46-48% on classic bikes. 
 
+<img width="1075" height="862" alt="Percent of Rides by Rideable Type" src="https://github.com/user-attachments/assets/79e30f21-a05c-4d74-95d0-67dd965d5ac0" />
+
 ### Summary
-The story behind the data is that annual members use the Cyclistic bikes mostly for commuting in urban areas on weekdays, with usage peaks during 8:00am and 5:00pm (rush hours) and Chicago Union Station being the most popular hub. Casual riders on the other hand, primarily use the bikes for pleasure and sightseeing near coastal attractions and along the shoreline. Casual riders' favorite days to ride are Saturdays and Sundays, but weekdays should not be dismissed because they also have significant casual ridership. Casual ridership builds hourly during the day and has a single peak at 5:00pm, then drops off hourly until about 2:00am.
+The story behind the data is that annual members use the Cyclistic bikes mostly for commuting in urban areas on weekdays, with usage peaks during 8:00am and 5:00pm (rush hours) and Chicago Union Station being the most popular hub. Casual riders on the other hand, primarily use the bikes for pleasure and sightseeing near coastal attractions and along the shoreline. Casual riders' favorite days to ride are Saturdays and Sundays, but weekdays should not be dismissed because they also have significant casual ridership. Casual ridership builds hourly each day, peaking at 5:00pm. It then drops off hourly with the lowest ridership between 2:00am and 5:00am.
 
 To target our marketing most effectively, I think it's important to understand certain casual rider preferences even though they are similar to that of annual members. Most riding for both groups occurs during the warmer months of May-October, and usage is highest in the late afternoon/early evenings. Also, both groups have almost an equal preference for electric bikes and classic bikes, but ridership of electric scooters is very low at 2-4%. So ad content and/or imagery should focus on both types of bikes.
