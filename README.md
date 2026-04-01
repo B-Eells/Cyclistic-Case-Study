@@ -144,9 +144,10 @@ The resultant schema going into the Analysis step looked like this:
 
 ## Step 4: Analyze
 
-By running the following [Data Analysis SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast trends in usage patterns.
-
 ### Summary
+
+By running the following [Data Analysis SQL Queries] to generate tables, we are then able to [visualize them in Tableau] to compare and contrast trends in usage patterns.
+
 The story behind the data is that while annual members use the Cyclistic bikes mostly for commuting and transportation in urban areas on weekdays, casual riders use the Cyclistic bikes mostly for pleasure and sightseeing along the waterfront and near attractions on weekends.
 
 Casual riders differ from annual members in the following specific areas:
@@ -160,6 +161,8 @@ Casual riders did not differ from annual members in the following specific areas
 * Ridership across both groups was greatest in the momths when Chicago is warmest, May through October.
 * The most popular time of day for casual riders was between 11:00am and 7:00pm, peaking at 5:00pm.
 * Both groups had a similar breakdown of rideable types. Electric scooters were not very popular, while classic bikes and e-bikes were evenly split. (this may relate more to do with marketing content than targeting)
+
+## Step 5: Share
 
 ### Total Ride Volume
 
@@ -182,12 +185,14 @@ For annual members the days with the highest average daily ride volume are weekd
 <img width="85%" alt="Ride Distro by Day of Week" src="https://github.com/user-attachments/assets/73aa6ae8-eb60-48f9-a14b-19f40143b0e3" />
 
 ### Ride Distribution by Hour of Day
+
 Both rider types use the service most in the late afternoon, peaking during the early evening hours. However, the annual members differ from the casual riders in that they have two peaks in the day, which correspond to both a.m. and p.m. rush hours.
 **Insights:** annual members have two peak usage times a day that correspond with traditional rush hours, indicating annual members mostly use the bikes for commuting. Casual riders do not appear to use the bikes as much for commuting to/from work, as evidenced by very low usage during the morning commute hours.
 
 <img width="90%" alt="Ride Distro by Hour of Day" src="https://github.com/user-attachments/assets/38e7d20c-e2c0-4ff3-936a-a33986b876a6" />
 
 ### Average Ride Distance & Duration
+
 The average distance per ride for annual members and casual riders was 2,209 meters and 2,173 respectively -- so they are very close in this regard. However, the average distance travelled in that time by annual members was nearly double that of casual riders. **Insights:** during an average per ride, casual riders cover approximately half the ground that annual members do.  The story this tells is that annual members use the bikes more efficiently, which corresponds to using the service more for transporation. Casual riders on the other hand, don't cover nearly as much ground during their average rides. They appear to ride slower or stop more frequently, indicating they are more likely using the bikes for pleasure and sightseeing.
 
 <img width="80%" alt="Duration   Distance (4)" src="https://github.com/user-attachments/assets/e848d83b-bbe4-4eb4-bf40-63cc265d9c5d" />
