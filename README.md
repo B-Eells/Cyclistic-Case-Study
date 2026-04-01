@@ -5,14 +5,11 @@
 
 ## Introduction
 
-The purpose of this data analysis case study is for me to exhibit my command of the key steps of the data analysis process: [Ask](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-1-ask), [Prepare](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-2-prepare), [Process](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-3-process), [Analyze](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-4-analysis), Share, Act. The case study is based on a fictitional bike-share company, but the source data is from a real-world operation.
+The purpose of this data analysis case study is for me to exhibit my command of the key steps of the data analysis process: [Ask](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-1-ask), [Prepare](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-2-prepare), [Process](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-3-process), [Analyze](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-4-analysis), [Share](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-5-share), [Act](https://github.com/B-Eells/Cyclistic-Case-Study/edit/main/README.md#step-6-act). The case study is based on a fictitional bike-share company, but the source data is from a real-world operation.
 
 References:
 * [Coursera: Google Data Analytics Professional Certificate](https://www.coursera.org/professional-certificates/google-data-analytics)
 * [Case Study 1_How does a bike-share navigate speedy success.pdf](https://github.com/user-attachments/files/26315462/Case.Study.1_How.does.a.bike-share.navigate.speedy.success.pdf)
-
-
-[Links to steps in paragraph above]
 
 ## Scenario
 
