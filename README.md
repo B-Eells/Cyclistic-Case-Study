@@ -244,6 +244,6 @@ Refernce: [Tableau Workbook](https://public.tableau.com/views/CyclisticCaseStudy
 ## Step 6: Act
 
 Top three recommendations:
-1. **Target our Marketing:** if we are able to target our marketing to casual users based on time, I would recommend targeting them May through mid-October, 7 days a week.  If we can target time of day, I would recommend 7:00am through about 4:00pm. If we are able to target our marketing based on location, I recommend targeting hotels, attractions and popular placdes along or proximate to the waterfront.
+1. **Target our Marketing:** if we are able to target our marketing to casual users based on time, I would recommend targeting them May through mid-October, 7 days a week.  If we can target time of day, I would recommend 7:00am through about 4:00pm. If we are able to target our marketing based on location, I recommend targeting hotels, attractions and popular places along or proximate to the waterfront.
 2. **Different Strokes:** annual members and casual riders use Cyclisting for completely different purposes. We may want to run A/B tests to see if it is more effective to market to casual riders: a) with the goal of creating repeat usage for their purpose, b) with the goal of converting them to commuters.
 3. **Deeper Data = Better Targeting:** if we could obtain and analyze further data, such as associating riders with rides and obtaining rider zip codes, we could develop insights that would enable us to deploy much more targeted marketing to much more specific segments.
