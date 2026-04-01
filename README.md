@@ -144,48 +144,42 @@ The resultant schema going into the Analysis step looked like this:
 
 ## Step 4: Analyze
 
-By running the following [Data Analysis SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast the usage patterns. The first section discusses the differences in usage patterns.  However, I deemed it important to also share a second section that displays similarities, because even though the trends may not be different, they contain data, observations and insights that can be critical to the effective targeting of our marketing.
+By running the following [Data Analysis SQL Queries] to generate tables, we are then able to visualize them in Tableau to compare and contrast trends in usage patterns.
 
 Summary statistics with identification of trends, relationships and surprises.
 
 ### Total Ride Volume
-* Total volume of rides: 5,720,900 (100%)
-* Total volume rides by annual members: 3,641,071 (63.6%)
-* Total volume of rides by casual riders: 2,079,829 (36.5%)
 * Insights: from a percent of total perspective, it appears to be a reasonable endeavor to convert casual riders to annual members.  If casual riders were a very slim minority (5% for example) or an overwheling majority (95% for example), conversions may not be where we want to focus our efforts.
 
+<img width="80%" alt="Total Rides 2024" src="https://github.com/user-attachments/assets/1366e4fc-23e5-4ffa-a176-8868f2729f57" />
+
 ### Ride Volume by Month
-* The most popular months for both annual members and casual riders is May-Oct.
-* Trends: 
 * Trends/Relationships:
   * Ridership for both groups climbs in the Spring, peaks during summer and declines in the fall, showing a very similar trend.
   * A quick look at historical weather patterns for Chicago reveals this pattern corresponds to the historically warmer months.
 * Insights: although this does not represent a difference in usage trends, it is important information to be considered when targeting our marketing.
 
+<img width="80%" alt="Rides per Month" src="https://github.com/user-attachments/assets/da2b123e-a7f6-4d78-85ae-cc7e290c9827" />
+
+
+Historic Temps:
+
 <img width="393" height="293" alt="Screenshot 2026-03-30 at 3 34 51 PM" src="https://github.com/user-attachments/assets/6e76e319-932d-4646-83f0-505515cc072b" />
   
-### Ride Volume by Day of Week
-* The most popular days of week for annual members:
-  * Wednesday (16%)
-  * Tuesday (15%)
-  * Thursday (15%)
-* Most popular days of week for casual riders:
-  * Saturday (21%)
-  * Sunday (17%)
-  * Friday (15%)
-* Trends:
-  * Annual members ride more often during weekdays and less often on weekends.
-  * Casual riders ride more often on weekends and less often on weekdays.
-* Trends/Relationships: the ride volume by day of week for annual members and casual riders is a largely inverse relationship.
-* Insights:
-  * For casual riders, although Saturday and Sunday boast the highest ridership from an "average daily" perspective, weekdays should not be discounted as having low ridership.  For casual riders, collectively weekdays comprise 63% of total rides.
-  * The weekday popularity for annual members suggest that many use the bikes to get to and from work. This supports the narrative that casual riders use the bikes more for pleasure.  
+### Ride Distribution by Day of Week
 
-### Ride Volume by Hour of Day
-* The most popular time of day for both annual members and casual riders are the 3:00pm through 6:00pm hours, with the apex during the 5:00pm hour.
-* The least popular time of day for both rider types is in the middle of the night, between the 2:00am through 4:00am hours.
-* Trends/Relationships: the usage pattern between the two rider times is similar, except annual members also have a second, smaller spike in the hours leading up to work, 6:00am to 8:00am.
-* Insights: the peak times for casual riders is between 11:00am and 7:00pm, when over 60% of their rides occur. This supports the story that annual members use the bikes more for efficient transportation (going to and from work) than pleasure.
+* Trends/Relationships:  Whereas annual members ride more often during weekdays and less often on weekends, casual riders have the opposite pattern: they ride more often on weekends than on weekdays.
+* Insights:
+  * This difference in riding patterns support the narrative that annual members use the service more for getting to/from work, whereas casual riders use the service more for pleasure.
+  * For casual riders, although Saturday and Sunday boast the highest ridership from an "average daily" perspective, weekdays should not be discounted as having low ridership.  For casual riders, weekdays collectively comprise 63% of their total rides. 
+
+<img width="85%" alt="Ride Distro by Day of Week" src="https://github.com/user-attachments/assets/73aa6ae8-eb60-48f9-a14b-19f40143b0e3" />
+
+### Ride Distribution by Hour of Day
+* Trends/Relationships: both rider types use the service most in the late afternoon, peaking during evening rush hour. However, the annual members differ from the casual riders in that they have two peaks in the day, which correspond to both a.m. and p.m. rush hours.
+* Insights: annual members have two peak usage times a day that correspond with traditional rush hours, indicating annual members mostly use the bikes for commuting. Casual riders do not appear to use the bikes as much for commuting to/from work, as evidenced by very low usage during the morning commute hours.
+
+<img width="75%" alt="Ride Distro by Hour of Day" src="https://github.com/user-attachments/assets/38e7d20c-e2c0-4ff3-936a-a33986b876a6" />
 
 ### Average Ride Duration & Distance
 * While the min and max ride durations for annual member and casual riders are simlar, annual members had an average ride duration of 12 minutes, 24 seconds, while casual riders had an average ride duration of 21 minutes, 23 seconds - almost double.
@@ -202,6 +196,6 @@ Insight: this was perhaps the most surprising and telling information revealed i
 Annual members and Casual riders have a very similar breakdown of rideable_type usage. For both groups, 50% of their rides were on electric bikes, about 2-4% on electric scooters, and about 46-48% on classic bikes. 
 
 ### Summary
-The story behind the data is that annual members use the bike share mostly for transportation in urban areas on weekdays, with Chicago Union Station being the most popular hub.  Casual riders on the other hand primarily use the bikes for pleasure and sightseeing near coastal attractions and along the shoreline. Casual members' favorite days to ride are Saturdays and Sundays, but weekdays should not be dismissed because they also have significant ridership.
+The story behind the data is that annual members use the Cyclistic bikes mostly for commuting in urban areas on weekdays, with usage peaks during 8:00am and 5:00pm (rush hours) and Chicago Union Station being the most popular hub. Casual riders on the other hand, primarily use the bikes for pleasure and sightseeing near coastal attractions and along the shoreline. Casual riders' favorite days to ride are Saturdays and Sundays, but weekdays should not be dismissed because they also have significant casual ridership. Casual ridership builds hourly during the day and has a single peak at 5:00pm, then drops off hourly until about 2:00am.
 
-To target our marketing most effectively, I think it's important to understand certain casual rider preferences even though they are similar to that of annual members. Most riding for both groups occurs during the warmer months of May-October, and usage is highest in the late afternoon/early evenings. Also, both groups have almost an equal preference for electric bikes and classic bikes, but ridership of electric scooters is very low at 2-4%. So ad content and/or imagery should definitely focus on bikes of both types.
+To target our marketing most effectively, I think it's important to understand certain casual rider preferences even though they are similar to that of annual members. Most riding for both groups occurs during the warmer months of May-October, and usage is highest in the late afternoon/early evenings. Also, both groups have almost an equal preference for electric bikes and classic bikes, but ridership of electric scooters is very low at 2-4%. So ad content and/or imagery should focus on both types of bikes.
