@@ -141,7 +141,7 @@ The resultant schema going into the Analysis step looked like this:
 
 ## Step 4: Analyze
 
-By running the following [Data Analysis SQL Queries]() to generate tables, we are then able to [Tableau Workbook](https://public.tableau.com/views/CyclisticCaseStudy_17719741439370/TopEndLocations?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) to compare and contrast trends in usage patterns.
+By running the following [Data Analysis SQL Queries](https://github.com/B-Eells/Cyclistic-Case-Study/blob/54f2ca2ba09a84b3a771485c1510197c27db460d/Data%20Analysis%20SQL%20Queries.sql) to generate tables, we are then able to [Tableau Workbook](https://public.tableau.com/views/CyclisticCaseStudy_17719741439370/TopEndLocations?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) to compare and contrast trends in usage patterns.
 
 ### Summary
 
