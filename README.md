@@ -176,22 +176,27 @@ Casual riders did not differ from annual members in the following areas, but the
  * If we could determine which riders bought enough day passes that they would have saved money by buying an annual pass, we could market to them accordingly.
  * If we knew which casual riders exhibited behavior that closely aligned with member behavior, we could market to them accordingly.
  * If we knew which attractions casual riders have and have not been to, we could market to them accordingly.
+ * If we knew which casual riders had local addresses vs. live out of town, we could focus our marketing on locals.
 5. Partnering with attractions to bundle offerings seems like an obvious strategy here. For example, if Cyclistic were able to offer discounts to key attractions that visitors would likely see over the course of multiple days, they could create Cyclistic membership bundles around that.
 6. Partner with hotels. Based on the touristy activity of casual riders, hotels are likely where many casual riders make a decision to seek out Cyclistic. Perhaps the aforementioned packages and incentives, along with positive reviews, can be promoted by local hotels who want their guests to have a great time in Chicago.
 
-## Share
+## Step 5: Share
 
 Refernce: [Tableau Workbook](https://public.tableau.com/views/CyclisticCaseStudy_17719741439370/TopEndLocations?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Total Ride Volume
 
-**Insight:** From a percent of total perspective, it appears to be a reasonable endeavor to convert casual riders to annual members.  If casual riders were a very slim minority (5% for example) or an overwheling majority (95% for example), conversions may not be where we want to focus our efforts.
+**Trends/Relationships:** Annual members comprised 64% of all rides, casual riders comprised 36%.
+
+**Insights:** From a percent of total perspective, it appears to be a reasonable endeavor to convert casual riders to annual members.  If casual riders were a very slim minority (5% for example) or an overwheling majority (95% for example), conversions may not be where we want to focus our efforts.
 
 <img width="80%" alt="Total Rides 2024" src="https://github.com/user-attachments/assets/1366e4fc-23e5-4ffa-a176-8868f2729f57" />
 
 ### Ride Volume by Month
 
-The monthly trend for both segments is almost identical. Usage climbs in the Spring, peaks during summer and declines in the fall, showing a very similar trend.  A quick look at historical weather patterns for Chicago reveals that usage corresponds with the historically warmer months. **Insights:** although this data does not show a difference in usage trends between the two rider types, peak usage months is important data that should be considered when targeting our marketing.
+**Trends/Relationships:** The monthly trend for both segments is almost identical. Usage climbs in the Spring, peaks during summer and declines in the fall, showing a very similar trend.  A quick look at historical weather patterns for Chicago reveals that usage corresponds with the historically warmer months.
+
+**Insights:** although this data does not show a difference in usage trends between the two rider types, peak usage months is important data that should be considered when targeting our marketing.
 
 <img width="80%" alt="Rides per Month" src="https://github.com/user-attachments/assets/da2b123e-a7f6-4d78-85ae-cc7e290c9827" />
 
@@ -199,34 +204,49 @@ The monthly trend for both segments is almost identical. Usage climbs in the Spr
   
 ### Ride Distribution by Day of Week
 
-For annual members the days with the highest average daily ride volume are weekdays. Casual riders have the opposite trend: the days with the highest average daily volume are weekends. **Insights:** this difference in riding trends supports the narrative that annual members use the service more for getting to/from work, whereas casual riders use the service more for pleasure. For casual riders, although Saturday and Sunday boast the highest average daily ride volume, weekdays should not be discounted as having low ridership.  For casual riders, weekdays collectively comprise 63% of their total rides. 
+**Trends/Relationships:** for annual members the days with the highest average daily ride volume are weekdays. Casual riders have the opposite trend: the days with the highest average daily volume are weekends.
+
+**Insights:** this difference in riding trends supports the narrative that annual members use the service more for getting to/from work, whereas casual riders use the service more for pleasure. For casual riders, although Saturday and Sunday boast the highest average daily ride volume, weekdays should not be discounted as having low ridership.  For casual riders, weekdays collectively comprise 63% of their total rides. 
 
 <img width="85%" alt="Ride Distro by Day of Week" src="https://github.com/user-attachments/assets/73aa6ae8-eb60-48f9-a14b-19f40143b0e3" />
 
 ### Ride Distribution by Hour of Day
 
-Both rider types use the service most in the late afternoon, peaking during the early evening hours. However, the annual members differ from the casual riders in that they have two peaks in the day, which correspond to both a.m. and p.m. rush hours.
+**Trends/Relationships:** both rider types use the service most in the late afternoon, peaking during the early evening hours. However, the annual members differ from the casual riders in that they have two peaks in the day, which correspond to both a.m. and p.m. rush hours.
+
 **Insights:** annual members have two peak usage times a day that correspond with traditional rush hours, indicating annual members mostly use the bikes for commuting. Casual riders do not appear to use the bikes as much for commuting to/from work, as evidenced by very low usage during the morning commute hours.
 
 <img width="90%" alt="Ride Distro by Hour of Day" src="https://github.com/user-attachments/assets/38e7d20c-e2c0-4ff3-936a-a33986b876a6" />
 
 ### Average Ride Distance & Duration
 
-The average distance per ride for annual members and casual riders was 2,209 meters and 2,173 respectively -- so they are very close in this regard. However, the average distance travelled in that time by annual members was nearly double that of casual riders. **Insights:** during an average per ride, casual riders cover approximately half the ground that annual members do.  The story this tells is that annual members use the bikes more efficiently, which corresponds to using the service more for transporation. Casual riders on the other hand, don't cover nearly as much ground during their average rides. They appear to ride slower or stop more frequently, indicating they are more likely using the bikes for pleasure and sightseeing.
+**Trends/Relationships:** during an average per ride, casual riders cover approximately half the ground that annual members do. 
+
+**Insights:** the story this tells is that annual members use the bikes more efficiently, which corresponds to using the service more for transporation. Casual riders on the other hand, don't cover nearly as much ground during their average rides. They appear to ride slower or stop more frequently, indicating they are more likely using the bikes for pleasure and sightseeing.
 
 <img width="80%" alt="Duration   Distance (4)" src="https://github.com/user-attachments/assets/e848d83b-bbe4-4eb4-bf40-63cc265d9c5d" />
 
 
 ### Start and End Locations, Routes
 
-The top 10 start and end locations for annual members are in more urban areas including commercial areas and urban neighborhoods. Not surprisingly, the most popular hub for annual members is Chicago Union Station. The top 10 start and end locations for casual riders however, are closer to the waterfront and adjacent to popular attractions. Also not surprisingly, the most popular hub for casual riders is Navy Pier.  **Insight** This was perhaps the most surprising and telling information revealed in this analysis.  This more than any other data underscores the narrative that annual members use the bikes for transportation while casual riders use the bikes mostly for pleasure and sightseeing.
+**Trends/Relationships:** the top 10 start and end locations for annual members are in more urban areas including commercial areas and urban neighborhoods. The most popular hub for annual members is Chicago Union Station. The top 10 start and end locations for casual riders however, are closer to the waterfront and adjacent to popular attractions. The most popular hub for casual riders is Navy Pier.
+
+**Insight** this difference in top routes was perhaps the most surprising and telling information revealed in this analysis.  This more than any other data underscores the narrative that annual members use the bikes for transportation while casual riders use the bikes mostly for pleasure and sightseeing.
 
 <img width="80%" alt="Locations   Routes (1)" src="https://github.com/user-attachments/assets/24371cc8-1ad3-44d5-9031-0d41379250e2" />
 
 
 ### Percent of Rides by Rideable Type
 
-Annual members and Casual riders have a very similar breakdown of rideable_type usage. For both groups, 50% of their rides were on electric bikes, about 2-4% on electric scooters, and about 46-48% on classic bikes. **Insights:** although not unique to casual riders, it is important for marketing content to note that casual riders have a roughly equal preference for ebikes vs. manual bikes. Also important to note is that electric scooters only make up only about 4% of the usage for casual riders, so probably no need to feature scooters in marketing content.
+**Trends/Relationships:** annual members and Casual riders have a very similar breakdown of rideable_type usage. For both groups, 50% of their rides were on electric bikes, about 2-4% on electric scooters, and about 46-48% on classic bikes.
+
+**Insights:** although not unique to casual riders, it is important for marketing content to note that casual riders have a roughly equal preference for ebikes vs. manual bikes. Also important to note is that electric scooters only make up only about 4% of the usage for casual riders, so probably no need to feature scooters in marketing content.
 
 <img width="80%" alt="Percent of Rides by Rideable Type" src="https://github.com/user-attachments/assets/79e30f21-a05c-4d74-95d0-67dd965d5ac0" />
 
+## Step 6: Act
+
+Top three recommendations:
+1. **Target our Marketing:** if we are able to target our marketing to casual users based on time, I would recommend targeting them May through mid-October, 7 days a week.  If we can target time of day, I would recommend 7:00am through about 4:00pm. If we are able to target our marketing based on location, I recommend targeting hotels, attractions and popular placdes along or proximate to the waterfront.
+2. **Different Strokes:** annual members and casual riders use Cyclisting for completely different purposes. We may want to run A/B tests to see if it is more effective to market to casual riders: a) with the goal of creating repeat usage for their purpose, b) with the goal of converting them to commuters.
+3. **Deeper Data = Better Targeting:** if we could obtain and analyze further data, such as associating riders with rides and obtaining rider zip codes, we could develop insights that would enable us to deploy much more targeted marketing to much more specific segments.
