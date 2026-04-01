@@ -142,13 +142,17 @@ The resultant schema going into the Analysis step looked like this:
 | v_end_station_id | string | calculated
 | geo_route | string | calculated
 
-## Step 4: Analyze & Step 5: Share
+## Step 4: Analyze
 
-By running the following [Data Analysis SQL Queries] to generate tables, we are then able to [visualize them in Tableau] to compare and contrast trends in usage patterns.
+By running the following [Data Analysis SQL Queries] to generate tables, we are then able to [Tableau Workbook](https://public.tableau.com/views/CyclisticCaseStudy_17719741439370/TopEndLocations?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link) to compare and contrast trends in usage patterns.
 
 ### Summary
 
+#### The Story
+
 The story behind the data is that while annual members use the Cyclistic bikes mostly on weekdays for commuting and transportation in urban areas, casual riders use Cyclistic bikes mostly on weekends for pleasure and sightseeing along the waterfront and adjacent to attractions.
+
+#### How do Casual Riders Differ?
 
 Casual riders differ from annual members in the following specific areas:
 * Over the course of the year, annual members accounted for 64% of the rides while casual riders accounted for 36% of the rides.
@@ -157,10 +161,27 @@ Casual riders differ from annual members in the following specific areas:
 * Though both rider segments roughly equalled each other in average ride distance, annual member covered that ground in about half the time as casual riders.
 * While annual members rode more efficiently and top locations were all in urban areas, casual riders rode slower and perhaps with more stops along the waterfront and near visitor attractions proximate to the waterfront.
 
-Casual riders did not differ from annual members in the following specific areas, but the data is likely importand for marketing anwyway:
+#### Important Data for Marketing
+
+Casual riders did not differ from annual members in the following areas, but the data may still be important for marketing:
 * Ridership across both groups was greatest in the momths when Chicago is warmest, May through October.
 * The most popular time of day for casual riders was between 11:00am and 7:00pm, peaking at 5:00pm.
 * Both groups had a similar breakdown of rideable types. Electric scooters were not very popular, while classic bikes and e-bikes were evenly split. (this may relate more to do with marketing content than targeting)
+
+#### Additional Insights/Recommendations
+1. Time Targeting: if able to target marketing to casual users based on time, I would recommend targeting them 7 days a week May through mid-October.  If you can target time of day, I would recommend 7:00am through about 4:00pm.
+2. Location Targeting: I recommend targeting hotels and attractions closest to the waterfront.
+3. Marketing message/strategy: the goal here is to obviously increase repeat use such that it makes more sense financially to become a member. Casual riders are mostly using the service mostly for leisure activities and sighseeing on weekends. The best strategy may not be to try and convert them to commuters, but rather to encourage/incentivize them to see more sights and have even more fun in Chicago on additional days of the year. Key imagery will be the waterfront and a variety of the top attractions proximate to the waterfront.
+4. Deeper insights will enable better marketing.  If we had deeper insights into which riders were associated with which rides, we could then customize our marketing strategy and incentives based on segments.  For example:
+ * If we could determine which riders bought enough day passes that they would have saved money by buying an annual pass, we could market to them accordingly.
+ * If we knew which casual riders exhibited behavior that closely aligned with member behavior, we could market to them accordingly.
+ * If we knew which attractions casual riders have and have not been to, we could market to them accordingly.
+5. Partnering with attractions to bundle offerings seems like an obvious strategy here. For example, if Cyclistic were able to offer discounts to key attractions that visitors would likely see over the course of multiple days, they could create Cyclistic membership bundles around that.
+6. Partner with hotels. Based on the touristy activity of casual riders, hotels are likely where many casual riders make a decision to seek out Cyclistic. Perhaps the aforementioned packages and incentives, along with positive reviews, can be promoted by local hotels who want their guests to have a great time in Chicago.
+
+## Share
+
+Refernce: [Tableau Workbook](https://public.tableau.com/views/CyclisticCaseStudy_17719741439370/TopEndLocations?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)
 
 ### Total Ride Volume
 
@@ -209,13 +230,3 @@ Annual members and Casual riders have a very similar breakdown of rideable_type 
 
 <img width="80%" alt="Percent of Rides by Rideable Type" src="https://github.com/user-attachments/assets/79e30f21-a05c-4d74-95d0-67dd965d5ac0" />
 
-### Recommendations
-1. Time Targeting: if able to target marketing to casual users based on time, I would recommend targeting them 7 days a week May through mid-October.  If you can target time of day, I would recommend 7:00am through about 4:00pm.
-2. Location Targeting: I recommend targeting hotels and attractions closest to the waterfront.
-3. Marketing message/strategy: the goal here is to obviously increase repeat use such that it makes more sense financially to become a member. Casual riders are mostly using the service mostly for leisure activities and sighseeing on weekends. The best strategy may not be to try and convert them to commuters, but rather to encourage/incentivize them to see more sights and have even more see more sights in Chicago on additional days of the year. Key imagery will be the waterfront and a variety of the top attractions proximate to the waterfront.
-4. Deeper insights will enable better marketing.  If we had deeper insights into which riders were associated with which rides, we could then customize our marketing strategy and incentives based on segments.  For example:
- * If we could determine which riders bought enough day passes that they would have saved money by buying an annual pass, we could market to them accordingly.
- * If we knew which casual riders exhibited behavior that closely aligned with member behavior, we could market to them accordingly.
- * If we knew which attractions casual riders have and have not been to, we could market to them accordingly.
-5. Partnering with attractions to bundle offerings seems like an obvious strategy here. For example, if Cyclistic were able to offer discounts to key attractions that visitors would likely see over the course of multiple days, they could create Cyclistic membership bundles around that.
-6. Partner with hotels. Based on the touristy activity of casual riders, hotels are likely where many casual riders make a decision to seek out Cyclistic. Perhaps the aforementioned packages and incentives, along with positive reviews, can be promoted by local hotels who want their guests to have a great time in Chicago.
