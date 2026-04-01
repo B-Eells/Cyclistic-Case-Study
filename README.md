@@ -142,13 +142,13 @@ The resultant schema going into the Analysis step looked like this:
 | v_end_station_id | string | calculated
 | geo_route | string | calculated
 
-## Step 4: Analyze
-
-### Summary
+## Step 4: Analyze & Step 5: Share
 
 By running the following [Data Analysis SQL Queries] to generate tables, we are then able to [visualize them in Tableau] to compare and contrast trends in usage patterns.
 
-The story behind the data is that while annual members use the Cyclistic bikes mostly for commuting and transportation in urban areas on weekdays, casual riders use the Cyclistic bikes mostly for pleasure and sightseeing along the waterfront and near attractions on weekends.
+### Summary
+
+The story behind the data is that while annual members use the Cyclistic bikes mostly on weekdays for commuting and transportation in urban areas, casual riders use Cyclistic bikes mostly on weekends for pleasure and sightseeing along the waterfront and adjacent to attractions.
 
 Casual riders differ from annual members in the following specific areas:
 * Over the course of the year, annual members accounted for 64% of the rides while casual riders accounted for 36% of the rides.
@@ -202,12 +202,13 @@ The average distance per ride for annual members and casual riders was 2,209 met
 
 The top 10 start and end locations for annual members are in more urban areas including commercial areas and urban neighborhoods. Not surprisingly, the most popular hub for annual members is Chicago Union Station. The top 10 start and end locations for casual riders however, are closer to the waterfront and adjacent to popular attractions. Also not surprisingly, the most popular hub for casual riders is Navy Pier.  **Insight** This was perhaps the most surprising and telling information revealed in this analysis.  This more than any other data underscores the narrative that annual members use the bikes for transportation while casual riders use the bikes mostly for pleasure and sightseeing.
 
-<img width="999" height="799" alt="Locations   Routes" src="https://github.com/user-attachments/assets/7d22e66c-a711-4aca-a5a5-77aea822a205" />
+<img width="80%" alt="Locations   Routes (1)" src="https://github.com/user-attachments/assets/24371cc8-1ad3-44d5-9031-0d41379250e2" />
+
 
 ### Percent of Rides by Rideable Type
 
 Annual members and Casual riders have a very similar breakdown of rideable_type usage. For both groups, 50% of their rides were on electric bikes, about 2-4% on electric scooters, and about 46-48% on classic bikes. **Insights:** although not unique to casual riders, it is important for marketing content to note that casual riders have a roughly equal preference for ebikes vs. manual bikes. Also important to note is that electric scooters only make up only about 4% of the usage for casual riders, so probably no need to feature scooters in marketing content.
 
-<img width="1075" height="862" alt="Percent of Rides by Rideable Type" src="https://github.com/user-attachments/assets/79e30f21-a05c-4d74-95d0-67dd965d5ac0" />
+<img width="80%" alt="Percent of Rides by Rideable Type" src="https://github.com/user-attachments/assets/79e30f21-a05c-4d74-95d0-67dd965d5ac0" />
 
 
